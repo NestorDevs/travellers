@@ -24,7 +24,7 @@ jobs:
         run: flutter packages get
         working-directory: ./
       - name: Build Web
-        run: flutter build web
+        run: flutter build web --release --base-href '/travellers/'
         working-directory: ./
       - name: Deploy
         run: |
